@@ -5,9 +5,15 @@ export default class Calculator {
       let answer = parseInt(sum)
       return [`${sum}`, answer]
     }
-
+    
     let splitSum = sum.split(" ")
-    let answer = parseInt(splitSum[0]) + parseInt(splitSum[2])
-    return [`${sum}`, answer]
+    if (splitSum[1] === "+") {
+      let answer = parseInt(splitSum[0]) + parseInt(splitSum[2])
+      return [`${sum}`, answer]
+    } 
+    if (splitSum[1] === "-") {
+      let answer = parseInt(splitSum[0]) - parseInt(splitSum[2])
+      return [`${sum}`, answer]
+    }
   }
 }
