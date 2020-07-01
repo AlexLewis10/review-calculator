@@ -23,7 +23,7 @@ If someone tries to divide by 0 > Maths error; illegal operation
 | "1 / 1" | ["1 / 1", 1] |
 | "1 + 1 + 1" | ["1 + 1 + 1", 3] |
 
-
+| "10 + 10" | ["10 + 10", 20] |
 
 
 
