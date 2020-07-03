@@ -41,6 +41,8 @@ I made this input output table to guide me through my tests.
 | "1 / 1" | ["1 / 1", 1] |
 | "10"    | ["10", 10]   |
 | "1 + 1 + 1" | ["1 + 1 + 1", 3] |
+| "1 - 1 - 1" | ["1 - 1 - 1", -1] |
+| "2 * 2 * 2" | ["2 * 2 * 2", 6] |
 | 1 / 0 | Maths error; illegal operation |
 | "" | Raises error |
 | No operator in string | Raises error |

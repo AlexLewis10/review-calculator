@@ -44,3 +44,13 @@ describe('1 and 1', () => {
   })
 })
 
+describe('2 and 2',() => {
+  it('2 * 2 * 2 returns an array with the sum and the answer 8', () => {
+    expect(calculator.calculate('2 * 2 * 2')).toEqual(['2 * 2 * 2', 8])
+  })
+
+  it('2 / 2 / 2 returns an array with the sum and the answer 8', () => {
+    expect(calculator.calculate('2 * 2 * 2')).toEqual(['2 * 2 * 2', 8])
+  })
+})
+
