@@ -6,9 +6,12 @@ export default class Calculator {
       let answer = parseInt(sum)
       return [`${sum}`, answer]
     }
-    
     if (splitSum[1] === "+") {
-      let answer = parseInt(splitSum[0]) + parseInt(splitSum[2])
+      splitSum = splitSum.filter(item => item != "+")
+      splitSum = splitSum.map((item) => {
+        return parseInt(item)
+      })
+      let answer = splitSum.reduce((a, b) => a + b, 0)
       return [`${sum}`, answer]
     } 
     if (splitSum[1] === "-") {
@@ -25,3 +28,5 @@ export default class Calculator {
     }
   }
 }
+
+  // [1, 2, 3, 4].reduce((a, b) => a + b, 0)
